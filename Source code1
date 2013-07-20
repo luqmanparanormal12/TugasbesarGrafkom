@@ -1,0 +1,48 @@
+#include <math.h>
+#include <stdlib.h>
+#include <GL/glut.h>
+
+//Variable untuk manipulasi sudut pandang
+static float angle=0.0,ratio;            //Sudut perputaran kamera (terhadap sumbu y)
+static float x=-10.0f,y=75.75f,z=250.0f;      //Posisi Kamera
+static float lx=0.0f,ly=0.0f,lz=-1.0f;   //Vektor sudut pandang
+
+//Menggambar Tanah               
+void alas(){
+  glBegin(GL_QUADS);
+		glVertex3f(-100.0, 0.0, -100.0);
+		glVertex3f(-100.0, 0.0,  100.0);
+		glVertex3f( 100.0, 0.0,  100.0);
+		glVertex3f( 100.0, 0.0, -100.0);
+	glEnd();
+     }
+      
+void jalan(){
+	glColor3f(0, 0, 0);
+	glBegin(GL_QUADS);
+		glVertex3f(-65.0, 0.1, -100.0);
+		glVertex3f(-65.0, 0.1,  100.0);
+		glVertex3f( -55.0, 0.1,  100.0);
+		glVertex3f( -55.0, 0.1, -100.0);
+	glEnd();
+     }
+     
+void jalan1(){
+	glColor3f(0, 0, 0);
+	glBegin(GL_QUADS);
+		glVertex3f(-65.0, 0.1, -100.0);
+		glVertex3f(-65.0, 0.1,  70.0);
+		glVertex3f( -55.0, 0.1,  70.0);
+		glVertex3f( -55.0, 0.1, -100.0);
+	glEnd();
+     }
+     
+void jalan2(){
+	glColor3f(0, 0, 0);
+	glBegin(GL_QUADS);
+		glVertex3f(-65.0, 0.1, 10.0);
+		glVertex3f(-63.4, 0.1,  56.0);
+		glVertex3f( -53.4, 0.1,  56.0);
+		glVertex3f( -55.0, 0.1, 10.0);
+	glEnd();
+     }
