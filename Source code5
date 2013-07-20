@@ -1,0 +1,45 @@
+/==============================pagar atas kanan================================
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1,1,1.1);
+    glTranslatef(6.49,-4.55,10);
+    glScalef(1.0,10,1.0);
+    glDisable(GL_COLOR_MATERIAL);
+    glutSolidCube(1);
+    glPopMatrix();
+         
+    //kuncup
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(3,4,0);
+    glTranslatef(6.49,0,10);
+    glRotatef(-90,1,0,0);
+    glScalef(0.3,0.3,0.1);
+    glutSolidCone(5,10,20,100);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(2,1,1.1);
+    glTranslatef(6.49,-4.6,8);
+    glScalef(1.0,4.5,3.0);
+    glutSolidCube(1);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+//==============================================================================
+
+    glPopMatrix();
+    
+    //atap
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(0.8,0,0);
+    glRotatef(45,0,1,0);
+    glTranslatef(0,35,0);
+    glScalef(23,7.3,23);
+    glutSolidOctahedron();
+    glPopMatrix();
+    glDisable (GL_TEXTURE_2D);
+}
