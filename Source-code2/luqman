@@ -1,0 +1,62 @@
+///////////////////////////////HYSTERIA/////////////////////////////////////////
+float ert=0.0, yui=0.0;
+void apa()
+{
+    glTranslatef(0,-5,0);
+    int i=0;
+    for(i=0;i<10;i++){
+    glTranslatef(0,1,0);if(i==3){
+        glColor3f(0,0,1);
+        }
+        glColor3f(1,1,0);
+    glutWireCube(1);
+}}
+
+void yangbiru(){
+     if(ert<=60){if(ert<30)ert+=0.25;else ert+=5;
+     if(ert==60)yui=60;}
+     else if(yui>=0){if(yui>30)yui-=0.25;else yui-=5;
+     if(yui==0)ert=0.0;}
+    glPushMatrix();
+        glTranslatef( 0, -2.5, 0);
+        glColor3f(2.3,1,0.4);
+        glutSolidCube(2.5);       
+    glPopMatrix();
+    }
+void ga(){
+    GLUquadric *quadric = gluNewQuadric();
+    glPushMatrix();
+        glColor3f(0.5,0.5,0.5);
+        glRotatef(90,1,0,0);
+        glTranslatef(0,0,-5.5);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glColor3f(0.5,0.5,0.5);
+        glTranslatef(0.25,0,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glColor3f(0.5,0.5,0.5);
+        glTranslatef(-0.5,0,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glTranslatef(0.25,0.25,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glTranslatef(0.25,-0.5,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glTranslatef(-0.5,0.5,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glTranslatef(0,-0.5,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+        glTranslatef(0.25,0,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20); 
+        glTranslatef(0.25,0.5,0);
+        gluCylinder(quadric, 0.1, 0.1, 10, 20, 20);
+    
+    glPopMatrix();
+}
+    
+void top(){
+     glPushMatrix();
+   ga();
+   apa();
+   
+   glPopMatrix();
+   }
+//////////////////////HYSTERIA//////////////////////////////////////////////////
