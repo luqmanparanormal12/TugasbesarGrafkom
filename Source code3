@@ -1,0 +1,128 @@
+void rumah() {
+     glColor3f(0.5,0.5,0.5);
+     //tembok
+     glPushMatrix();
+     glEnable(GL_COLOR_MATERIAL);
+     glColor3f(1.5,1,1);
+     glTranslatef(0,4,0);
+     glRotatef(-90,0,1,0);
+     glScalef(2,1.5,2);
+     glutSolidCube(14);
+     glDisable(GL_COLOR_MATERIAL);
+ 
+     //pintu
+     glPushMatrix();
+     glEnable(GL_COLOR_MATERIAL);
+     glColor3f(0.5,0.8,0);
+     glTranslatef(-5,-3.89,6.96);
+     glScalef(4,10,1);
+     glutSolidCube(0.6);
+     glDisable(GL_COLOR_MATERIAL);
+     glPopMatrix();
+
+     //jendela
+     glPushMatrix();
+     glEnable(GL_COLOR_MATERIAL);
+     glColor3f(1.5,0.8,0);
+     glTranslatef(3.2,2.4,6.96);
+     glScalef(3,3,1);
+     glutSolidCube(0.6);
+     glDisable(GL_COLOR_MATERIAL);
+     glPopMatrix();
+
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(5.3,2.4,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(3.2,4.5,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(5.3,4.5,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+    //jendela 2
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(-3.4,4.5,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(-5.5,4.5,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(-3.4,2.4,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(1.5,0.8,0);
+    glTranslatef(-5.5,2.4,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+    //jendela bawah
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(0,0,0);
+    glTranslatef(0,-1.8,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glEnable(GL_COLOR_MATERIAL);
+    glColor3f(0,0,0);
+    glTranslatef(-2,-1.8,6.96);
+    glScalef(3,3,1);
+    glutSolidCube(0.6);
+    glDisable(GL_COLOR_MATERIAL);
+    glPopMatrix();
+
+    glPopMatrix();
+    
+    //atap
+     glPushMatrix();
+     glEnable(GL_COLOR_MATERIAL);
+     glColor3f(0.8,0,0);
+     glRotatef(45,0,1,0);
+     glTranslatef(0,15.5,0);
+     glScalef(23,7.3,23);
+     glutSolidOctahedron();
+     glPopMatrix();
+     glDisable (GL_TEXTURE_2D);
+}
